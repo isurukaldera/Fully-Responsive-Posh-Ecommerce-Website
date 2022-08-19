@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="Width=device-width, initial-scale=1.0">
+    <title>Posh Online Retail Shop</title>
+    <script src="https://kit.fontawesome.com/3321fe20a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="C:\Users\Acer\Desktop\posh\images\dnt.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <li id="lg-bag"><a href="Login.html"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+
+            <i id="bar" class="fas fa-outdent"></i>
+
+        </div>
+
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h4>Checkout</h4>
+
+    </section>
+
+
+    <main id="page-main">
+        <div id="main-header">
+            <div id="order" class="block">
+                <div id="order-summary">
+                    <h5>
+                        <i class="fas fa-clipboard" aria-hidden="true"></i> Your order
+                    </h5>
+                    <div class="order-summary-details">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Items</th>
+                                    <th>Details</th>
+                                    <th>Price</th>
+                                    <th>Delivery</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2&nbsp;Shirts</td>
+                                    <td>2&nbsp;Summer- Collection</td>
+                                    <td>$&nbsp;696.06</td>
+                                    <td>48&nbsp;hours*</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="order-actions">
+                    <div><input type="submit" value="Place order" /></div>
+                    <div><button class="form-action" type="button">Print Receipt</button></div>
+                </div>
+            </div>
+            <div id="help-center" class="block">
+                <h5>
+                    <i class="far fa-life-ring" aria-hidden="true"></i> Help center
+                    <h5>
+                        <div>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or mail.
+                        </div>
+                        <address>
+                    <a href="tel:+971(0)555555" class="undecorated">+971 (0) 555 555</a>
+                    <a href="mailto:help@qtest.com" class="undecorated">help@qtest.com</a>
+                </address>
+            </div>
+        </div>
+        <div id="order-main" class="block">
+            <form>
+                <fieldset id="form-section-document-type">
+                    <legend>Select a Methord to receive your receipt</legend>
+                    <section class="radio-row">
+                        <label>
+                            <input type="radio" class="custom-radio" name="document-type" id="document-type-1" value="website" required />
+                            <div class="radio-item">
+                                <div class="radio-content radio-doctype">
+                                    <figure class="img-resize icon-doctype">
+                                        <img src="C:\Users\Acer\Desktop\posh\images\doctype-1-ws.png" class="img-resize" title="Website" />
+                                    </figure>
+                                    <span>Website</span>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" class="custom-radio" name="document-type" id="document-type-2" value="documents" required checked />
+                            <div class="radio-item">
+                                <div class="radio-content radio-doctype">
+                                    <figure class="img-resize icon-doctype">
+                                        <img src="C:\Users\Acer\Desktop\posh\images\doctype-2-doc.png" class="img-resize" title="Documents" />
+                                    </figure>
+                                    <span>Documents</span>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" class="custom-radio" name="document-type" id="document-type-3" value="social-account" required />
+                            <div class="radio-item">
+                                <div class="radio-content radio-doctype">
+                                    <figure class="img-resize icon-doctype">
+                                        <img src="C:\Users\Acer\Desktop\posh\images\doctype-3-social.png" class="img-resize" title="Social Account" />
+                                    </figure>
+                                    <span>Social Account</span>
+                                </div>
+                            </div>
+                        </label>
+                    </section>
+                </fieldset>
+
+
+                <fieldset id="form-section-signup" class="counted">
+                    <legend>Sign up and choose a payment method</legend>
+
+                    <div class="row">
+                        <div class="column left">
+                            <div><label for="user-name" class="label">Full name</label></div>
+                            <div><input id="user-name" name="user-name" type="text" value="" autocomplete="cc-name" inputmode="latin-name" minlength="3" maxlength="32" pattern="[A-Za-z\s]{3,32}" title="Only latin letters, as specified on your credit card"
+                                    placeholder="Your name" required />
+                                <label for="user-name" class="validity"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <div><label for="user-email" class="label">Email address</label></div>
+                            <div><input id="user-email" name="user-email" type="email" value="" autocomplete="email" inputmode="email" minlength="6" maxlength="32" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Must contain valid email address" placeholder="Your email address"
+                                    required />
+                                <!-- inputmode arbitrary for type=="email" -->
+                                <label for="user-email" class="validity"></label>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div><label for="user-password" class="label"> password</label></div>
+                            <div><input id="user-password" name="user-password" type="password" value="" autocomplete="current-password" inputmode="verbatim" minlength="8" maxlength="32" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,32}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 characters (32 max)"
+                                    placeholder="Enter your password code here" required />
+                                <label for="user-password" class="validity"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-methods">
+                        <section class="radio-row payment-method">
+                            <div><label>
+                                <input type="radio" class="custom-radio" name="payment-method" id="payment-method-1" value="credit-card" required checked />
+                                <div class="radio-item">
+                                    <div class="radio-content payment-method">
+                                        <figure class="img-resize icon-pmt-logo"><img src="C:\Users\Acer\Desktop\posh\images\pmt-1-cc.png" class="img-resize" title="Credit card" /></figure>
+                                        <span class="invisible-text">Credit card</span>
+                                    </div>
+                                </div>
+                            </label></div>
+                            <div><label>
+                                <input type="radio" class="custom-radio" name="payment-method" id="payment-method-2" value="paypal" required />
+                                    <div class="radio-item">
+                                        <div class="radio-content payment-method">
+                                            <figure class="img-resize icon-pmt-logo"><img src="C:\Users\Acer\Desktop\posh\images\pmt-2-pp.png" class="img-resize" title="Paypal" /></figure>
+                                            <span class="invisible-text">Paypal</span>
+                                        </div>
+                                    </div>
+                            </label></div>
+                            <div><label>
+                                <input type="radio" class="custom-radio" name="payment-method" id="payment-method-3" value="amazon" required />
+                                <div class="radio-item">
+                                    <div class="radio-content payment-method">
+                                        <figure class="img-resize icon-pmt-logo"><img src="C:\Users\Acer\Desktop\posh\images\pmt-3-amazon.png" class="img-resize" title="Amazon" /></figure>
+                                        <span class="invisible-text">Amazon</span>
+                                    </div>
+                                </div>
+                            </label></div>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <div><label for="card-number" class="label">Card number</label></div>
+                            <div><input id="card-number" name="card-number" type="text" value="" autocomplete="cc-number" inputmode="numeric" maxlength="19" size="20" pattern="[\d\s]{16,19}" title="Must contain a valid card number" placeholder="0000 0000 0000 0000"
+                                    required />
+                                <label for="card-number" class="validity"></label>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div><label for="card-expiry-date" class="label">Expiry date</label></div>
+                            <div><input id="card-expiry-date" name="card-expiry-date" type="month" value="" min="2018-01" max="2050-12" autocomplete="cc-exp" size="10" title="Card should be valid at least over next 3 days" required />
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div><label for="card-code" class="label">Code</label></div>
+                            <div><input id="card-code" name="card-code" type="text" value="" autocomplete="cc-csc" inputmode="numeric" maxlength="4" size="4" pattern="[\d]{3,4}" title="Must contain a valid CVV/CVV2 3- or 4-digit code" placeholder="000" required
+                                />
+                                <label for="card-code" class="validity"></label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset id="form-footer">
+                    <div>
+                        <div class="checkbox">
+                            <input id="tnc-consent" value="tnc-accepted" type="checkbox" required />
+                            <!-- label for="tnc-consent"></label -->
+                            <label for="tnc-consent">I agree to the <a href="#">Terms & Conditions</a></label>
+                        </div>
+                        <div><input type="submit" value="Place order" /></div>
+                        <div><button class="form-action" type="button">Print a quote</button></div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 90/96 swarna Road,Wellawatta,Colombo 06</p>
+            <p><strong>Phone:</strong> +940789406970</p>
+            <p><strong>Hours:</strong> 09-30 - 18.00, Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instergram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <div class="col" onclick="window.location.href= 'Signin.html';">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Whishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install">
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="C:\Users\Acer\Desktop\posh\images\pay\app.jpg" alt="">
+                    <img src="C:\Users\Acer\Desktop\posh\images\pay\play.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="C:\Users\Acer\Desktop\posh\images\pay\pay.png" alt="">
+            </div>
+
+            <div class="Copyright">
+                <p> @ 2022, final project - HTML CSS Ecommerce Template</p>
+            </div>
+    </footer>
+
+
+
+    <script src="Script.js"></script>
+
+</body>
+
+</html>
